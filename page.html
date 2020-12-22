@@ -4,18 +4,23 @@
     <base target="_top">
   </head>
   <body>
-    <label for="usernamen">Nome</label><input type="text" id="username">
+    <label for="username">Nome</label><input type="text" id="username">
     <button id="btn" > Hello</button>
     
     <script> 
-    document.getElementById("btn").addEventListener("click", doStuff)
+  
     document.getElementById("btn").addEventListener("click", doStuff);
     
     
     // FUNZIONE N°1
     function doStuff() { 
     
-      google.script.run.userClicked ()
+    var uname=document.getElementById("username").value;
+    //cosole.log (uname);
+   
+      google.script.run.userClicked(uname);
+      
+      //document.getElementById("username")="";
       
     
     }

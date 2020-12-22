@@ -15,7 +15,7 @@ function doGet(e) {
 }
 
 // FUNZIONE N°2
- function userClicked () {
-  Logger.log("Qualcuno ha cliccato!");
+ function userClicked (name) {
+  Logger.log(name +"Qualcuno ha cliccato!");
   
   }
